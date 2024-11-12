@@ -16,10 +16,11 @@ public class Calculator {
         System.out.println("5. Square Root");
         System.out.println("6. Clear Current Result");
         System.out.println("7. Exit");
-        System.out.println("Enter your choice: ");
-        int choice = sc.nextInt();
+
         String choice2="";
         do {
+            System.out.println("Enter your choice: ");
+            int choice = sc.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Enter the number to add: ");
@@ -60,12 +61,11 @@ public class Calculator {
                     break;
 
             }
+            System.out.println("Do you want to perform another operation? (yes/no): ");
+            choice2 = sc.next();
         }
         while (choice2.equalsIgnoreCase("yes"));
 
-        System.out.println("Do you want to perform another operation? (yes/no): ");
-        choice2 = sc.next();
+
         }
-
-
     }
