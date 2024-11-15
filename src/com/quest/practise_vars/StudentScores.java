@@ -35,7 +35,7 @@ public class StudentScores {
         int[] sum=new int[names.length];
         int[] avg=new int[names.length];
 
-        for(int i=0; i<names.length; i++){
+        for(int i=0; i<scores.length; i++){
             for(int j=0; j<scores[i].length; j++) {
                 sum[i] += scores[i][j];
             }
@@ -45,7 +45,7 @@ public class StudentScores {
 
         System.out.println("-----------AVERAGE SCORES------------");
         for(int i=0; i<names.length; i++){
-            System.out.println(names[i]+" : age : "+ages[i]+" avreage score : "+avg[i]);
+            System.out.println(names[i]+" : age : "+ages[i]+" average score : "+avg[i]);
         }
 
     }
@@ -56,7 +56,7 @@ public class StudentScores {
         int[] sum=new int[names.length];
         int[] avg=new int[names.length];
 
-        for(int i=0; i<names.length; i++){
+        for(int i=0; i<scores.length; i++){
             for(int j=0; j<scores[i].length; j++) {
                 sum[i] += scores[i][j];
             }
@@ -115,10 +115,11 @@ public class StudentScores {
         System.out.println("--------MISSING DATA ---------");
 
 
-        for (int i = 0; i < names.length; i++) {
+        for (int i = 0; i < scores.length; i++) {
             for (int j = 0; j < scores[i].length; j++) {
                 if (scores[i][j] == -1) {
                     System.out.println("Missing score for " + names[i] + " in subject " + (j + 1));
+                    break;
                 }
             }
         }
