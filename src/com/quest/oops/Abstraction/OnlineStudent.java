@@ -2,9 +2,9 @@ package com.quest.oops.Abstraction;
 
 public class OnlineStudent extends Student {
 
-    public OnlineStudent() {
-
-    }
+    //    public OnlineStudent() {
+//
+//    }
     @Override
     public void submitAssignment() {
         System.out.println("Online Student Submitted assignment");
@@ -16,5 +16,11 @@ public class OnlineStudent extends Student {
         System.out.println("Online Student Attended Class");
 
     }
+    public void study(){
+        super.study();
+    }
+
 
 }
+
+

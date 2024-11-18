@@ -11,4 +11,5 @@ public class RegularStudent extends Student {
         System.out.println("Regular student is submitted assignment");
     }
 
+
 }

@@ -8,9 +8,11 @@ public class AbstractionExample {
         offline.attendClass();
         offline.submitAssignment();
         online.attendClass();
+        online.study();
         online.submitAssignment();
         regular.attendClass();
         regular.submitAssignment();
+
 
 //        Student onlineStudent=StudentFactory.getStudent("online");
 //        Student offlineStudent=StudentFactory.getStudent("offline");

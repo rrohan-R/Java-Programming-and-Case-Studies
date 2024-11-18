@@ -8,5 +8,9 @@ public class InheritanceTest {
         Employee e=new Employee("Mike",107,35000);
         e.getEmpName();
         e.getSalary();
+        StudyIn2 study=new StudyIn2("nana",88);
+        study.method1();
+        study.method2();
+        study.meth();
     }
 }

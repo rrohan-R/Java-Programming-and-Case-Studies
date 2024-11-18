@@ -8,8 +8,8 @@ public class TypeCasting {
         System.out.println(b);
 
         //explicit
-        int c =2;
-        double d= (double)a;
+        int c =8;
+        double d= (double)c;
         System.out.println(d);
     }
 }

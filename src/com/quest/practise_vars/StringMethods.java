@@ -10,7 +10,7 @@ public class StringMethods {
         System.out.println(s.charAt(0));
         System.out.println(s.length());
         System.out.println(s.isEmpty());
-        System.out.println(s.replace(s,"mo"));
+        System.out.println(s.replace("s","mo"));
         System.out.println(s.toLowerCase());
         System.out.println(s.toUpperCase());
         System.out.println(s.toCharArray());

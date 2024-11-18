@@ -26,7 +26,7 @@ public class PractiseOperators {
 
         int z=10;
         //Assignment Operators
-        z+=5; //z=z+5
+//        z+=5; //z=z+5
         //Unary Operators
         System.out.println(z++);
         System.out.println(++z);
