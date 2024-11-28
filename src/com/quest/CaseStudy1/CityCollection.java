@@ -1,4 +1,4 @@
-package com.quest.CaseStudy;
+package com.quest.CaseStudy1;
 
 import java.util.Scanner;
 

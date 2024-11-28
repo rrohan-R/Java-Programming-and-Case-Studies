@@ -1,4 +1,4 @@
-package com.quest.CaseStudy;
+package com.quest.CaseStudy1;
 
 public class City {
 
