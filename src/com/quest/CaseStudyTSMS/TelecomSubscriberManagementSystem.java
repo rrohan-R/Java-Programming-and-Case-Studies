@@ -50,7 +50,7 @@ public class TelecomSubscriberManagementSystem {
                     telecomSystem.updateSubscriberBalance(id, balance);
                     break;
                 }
-                case 3 : telecomSystem.listSubscribers();
+                case 3 : telecomSystem.listSubscriberDetails();
                 break;
                 case 4 : {
                     System.out.print("Enter Subscriber ID for the Call: ");
@@ -72,7 +72,7 @@ public class TelecomSubscriberManagementSystem {
                 case 6 : {
                     System.out.print("Enter Subscriber ID to Generate Bill: ");
                     String id = scanner.nextLine();
-                    telecomSystem.generateBill(id);
+                    telecomSystem.generateBillAmount(id);
                     break;
                 }
                 case 7 : {

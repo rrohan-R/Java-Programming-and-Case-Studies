@@ -29,7 +29,7 @@ public class TelecomSystem {
     }
 
     // Displays all available subscribers
-    public void listSubscribers() {
+    public void listSubscriberDetails() {
         subscribers.forEach(System.out::println);
     }
 
@@ -50,7 +50,7 @@ public class TelecomSystem {
     }
 
     // Generate  postpaid subscriber bill
-    public void generateBill(String subscriberId) {
+    public void generateBillAmount(String subscriberId) {
         Subscribers subscriber = null;
         for (Subscribers subscribers : subscribers) {
             if (subscribers.getSubscriberId().equals(subscriberId)) {
