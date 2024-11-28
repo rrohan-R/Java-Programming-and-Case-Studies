@@ -1,4 +1,4 @@
-package com.quest.practise_vars.Collections;
+package com.quest.Collections.lists;
 
 import java.util.LinkedList;
 
