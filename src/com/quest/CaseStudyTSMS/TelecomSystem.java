@@ -68,11 +68,11 @@ public class TelecomSystem {
         for (CallDetails record : callRecords) {
             if (record.toString().contains(subscriberId)) {
                 if (record.toString().equalsIgnoreCase("Local")){
-                    totalAmount += record.getCallDuration() * 2;
+                    totalAmount += record.getCallDuration() * 1;
                 } else if (record.toString().equalsIgnoreCase("STD")) {
-                    totalAmount += record.getCallDuration() * 4;
+                    totalAmount += record.getCallDuration() * 2;
                 } else if (record.toString().equalsIgnoreCase("ISD")) {
-                    totalAmount += record.getCallDuration() *6 ;
+                    totalAmount += record.getCallDuration() *5 ;
                 }
             }
         }
