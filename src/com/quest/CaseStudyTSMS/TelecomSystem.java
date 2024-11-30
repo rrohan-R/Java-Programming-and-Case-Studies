@@ -82,8 +82,9 @@ public class TelecomSystem {
 
     // Save data to files
     public void saveData() {
-        try (ObjectOutputStream subOut = new ObjectOutputStream(new FileOutputStream(subscriberFile));
-             ObjectOutputStream callOut = new ObjectOutputStream(new FileOutputStream(callRecordsFile))) {
+        try {
+            ObjectOutputStream subOut = new ObjectOutputStream(new FileOutputStream(subscriberFile));
+             ObjectOutputStream callOut = new ObjectOutputStream(new FileOutputStream(callRecordsFile));
             subOut.writeObject(subscribers);
             callOut.writeObject(callRecords);
         } catch (IOException e) {
@@ -93,10 +94,11 @@ public class TelecomSystem {
 
     // Load data from files
     public void loadData() {
-        try (ObjectInputStream out = new ObjectInputStream(new FileInputStream(subscriberFile));
-             ObjectInputStream in = new ObjectInputStream(new FileInputStream(callRecordsFile))) {
-            subscribers = (ArrayList<Subscribers>) out.readObject();
-            callRecords = (ArrayList<CallDetails>) in.readObject();
+        try {
+            ObjectInputStream subIn = new ObjectInputStream(new FileInputStream(subscriberFile));
+             ObjectInputStream callIn = new ObjectInputStream(new FileInputStream(callRecordsFile));
+            subscribers = (ArrayList<Subscribers>) subIn.readObject();
+            callRecords = (ArrayList<CallDetails>) callIn.readObject();
             System.out.println("Data loaded successfully.");
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error loading data: " + e.getMessage());
