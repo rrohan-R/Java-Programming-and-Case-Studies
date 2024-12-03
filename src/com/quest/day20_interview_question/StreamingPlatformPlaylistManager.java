@@ -34,10 +34,7 @@ public class StreamingPlatformPlaylistManager {
                         System.out.println("User created successfully!");
                     }
                     case 2 -> {
-                        if (user == null) {
-                            System.out.println("Create a user first!");
-                            continue;
-                        }
+                        if (validUserCheck(scanner, userMethods, user)) continue;
                         System.out.print("Enter playlist name: ");
                         String playlistName = scanner.nextLine();
                         userMethods.createNewPlaylist(playlistName);
@@ -81,6 +78,8 @@ public class StreamingPlatformPlaylistManager {
                         } else {
                             System.out.println("Tracks are not equal.");
                         }
+                        System.out.println("The duplicate Tracks in Playlists are:");
+                        playlistMethods.findDuplicates();
                     }
                     case 7 -> {
                         if (validUserCheck(scanner, userMethods, user)) continue;
@@ -98,10 +97,7 @@ public class StreamingPlatformPlaylistManager {
                         playlistMethods.displayTracks();
                     }
                     case 9 -> {
-                        if (user == null) {
-                            System.out.println("Create a user first!");
-                            continue;
-                        }
+                        if (validUserCheck(scanner, userMethods, user)) continue;
                         System.out.print("Enter first playlist name: ");
                         String playlist1 = scanner.nextLine();
                         System.out.print("Enter second playlist name: ");
