@@ -23,6 +23,7 @@ public class CustomerMapping implements Serializable {
             throw new VehicleNotAvailableException("Vehicle not available");
         }
         c.addPurchasedVehicle(vehiclePurchase);
+        customers.computeIfAbsent(c, k -> new HashSet<>()).add(vehiclePurchase);
         inventory.remove(vehiclePurchase);
     }
 
