@@ -81,7 +81,7 @@ public class Main {
                             .orElse(null);
 
                     if (vehicle != null) {
-                            Vehicle discountedVehicle =  vehicle.clone(vehicle);
+                            Vehicle discountedVehicle =  vehicle.cloneDiscount(vehicle);
                             System.out.println("Discounted Vehicle: " + discountedVehicle);
                     } else {
                         System.out.println("Vehicle not found!");
