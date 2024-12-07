@@ -69,14 +69,14 @@ public class Vehicle implements Cloneable {
     }
 
 
-    @Override
-    public Vehicle clone() {
+
+    public Vehicle clone(Vehicle vehicle) {
         try {
-            Vehicle clone = (Vehicle) super.clone();
-            // TODO: copy mutable state here, so the clone can't change the internals of the original
-            return clone;
+            Vehicle vehicleClone = (Vehicle) vehicle.clone();
+            vehicleClone.setPrice(vehicle.getPrice() * 0.5);
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
+        return vehicle;
     }
 }

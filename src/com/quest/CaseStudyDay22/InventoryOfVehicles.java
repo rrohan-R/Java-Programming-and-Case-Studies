@@ -25,9 +25,9 @@ public class InventoryOfVehicles {
                 .forEach(System.out::println);
     }
 
-    public static Vehicle discountToVehicle(Vehicle vehicle) throws CloneNotSupportedException{
-        Vehicle vehicleClone =  vehicle.clone();
-        vehicleClone.setPrice(vehicle.getPrice() * 0.5);
-        return vehicleClone;
-    }
+//    public static Vehicle discountToVehicle(Vehicle vehicle) throws CloneNotSupportedException{
+//        Vehicle vehicleClone =  vehicle.clone();
+//        vehicleClone.setPrice(vehicle.getPrice() * 0.5);
+//        return vehicleClone;
+//    }
 }
