@@ -73,7 +73,7 @@ public class Vehicle implements Cloneable {
     public Vehicle cloneDiscount(Vehicle vehicle) {
         Vehicle vehicleClone =  vehicle.clone();
         vehicleClone.setPrice(this.price * 0.5);
-        return vehicle;
+        return vehicleClone;
     }
 
     @Override
