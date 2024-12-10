@@ -33,7 +33,6 @@ public class Main {
         }
     }
 
-    // PART 1: Manage Vehicles
     private static void manageVehicles() {
         System.out.println("\n=== Manage Vehicles ===");
         System.out.println("1. Add Electric Vehicle");
@@ -101,7 +100,7 @@ public class Main {
         vehicleList.forEach(System.out::println);
     }
 
-    // PART 2: Manage Customers and Service Bookings
+
     private static void manageServiceBookings() {
         System.out.println("\n=== Manage Customers and Service Bookings ===");
         System.out.println("1. Add Customer");
@@ -195,7 +194,6 @@ public class Main {
         bookings.forEach(System.out::println);
     }
 
-    // PART 3: Generate Reports
     private static void generateReports() throws FileNotFoundException {
         System.out.println("\n=== Generate Reports ===");
         System.out.println("1. Serialize Data");
