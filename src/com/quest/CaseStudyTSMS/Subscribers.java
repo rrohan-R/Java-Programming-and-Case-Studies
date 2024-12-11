@@ -6,7 +6,7 @@ public class Subscribers implements Serializable {
     private String subscriberId;
     private String subscriberName;
     private String subscriberNumber;
-    private String subscriberPlanType;
+    private String subscriberPlanType; //enum can be used
     private double subscriberBalance;
 
     public Subscribers(String subscriberId, String subscriberName, String subscriberNumber, String subscriberPlanType, double subscriberBalance) {
