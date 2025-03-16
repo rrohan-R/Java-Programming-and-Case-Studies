@@ -1,1 +1,1 @@
-Open master branch , then open the QUEST directory
+Open master branch , then open the 'src/com/quest' directory
